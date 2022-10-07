@@ -18,18 +18,18 @@ const deposit = 100;
 const priceTomatoes = 10;
 const priceCucumbers = 5;
 const priseApples = 15;
-let monyForNuts;
+let spentOnNuts;
 
-let monyForVegetablesAndFruits;
-monyForVegetablesAndFruits = 2 * (priceTomatoes + priceCucumbers + priseApples);
-monyForNuts = deposit - monyForVegetablesAndFruits;
+let spentOnVegetablesAndFruits;
+spentOnVegetablesAndFruits = 2 * (priceTomatoes + priceCucumbers + priseApples);
+spentOnNuts = deposit - spentOnVegetablesAndFruits;
 
-console.log(monyForNuts);
-console.log(monyForVegetablesAndFruits > monyForNuts); // если > true, если <= false
+console.log(spentOnNuts);
+console.log(spentOnVegetablesAndFruits > spentOnNuts); // если > true, если <= false
 
-if (monyForVegetablesAndFruits > monyForNuts) {
+if (spentOnVegetablesAndFruits > spentOnNuts) {
     console.log('Больше потратили на фрукты и овощи');
-} else if (monyForVegetablesAndFruits < monyForNuts) {
+} else if (spentOnVegetablesAndFruits < spentOnNuts) {
     console.log('Больше потратили на орехи');
 } else {
     console.log('Потратили одинаковое количество денег');
