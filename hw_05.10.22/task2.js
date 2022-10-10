@@ -33,4 +33,4 @@ if (spentOnVegetablesAndFruits > spentOnNuts) {
     console.log('Больше потратили на орехи');
 } else {
     console.log('Потратили одинаковое количество денег');
-};
+}
