@@ -20,12 +20,9 @@
 
 // 5.В программе заданы две переменные n и m с числовым значением каждая. 
 // Напишите цикл, который выводит в консоль числа от большего числа до меньшего,
-//     let n;
-// lrt m;
-// let max = n;
-// let min = m;
-// if (n < m) max = m, min = n;
-// for (let i = max; i >= min; i--) {
+// let n=9;
+// let m=0;
+// for (let i = Math.max(n,m); i >= Math.min(n,m); i--) {
 //     console.log(i);
 // }
 
@@ -42,12 +39,9 @@
 //         (в начале сумму четных чисел, а затем сумму нечетных).
 // let n = 0;
 // let m = 5;
-// let max = n;
-// let min = m;
 // let sumOdd = 0;
 // let sumEven = 0;
-// if (n < m) max = m, min = n;
-// for (let i = min; i <= max; i++) {
+// for (let i = Math.min(n,m); i <= Math.max(n,m); i++) {
 //     i % 2 == 0 ? sumEven += i : sumOdd += i;
 // }
 // console.log(sumEven);
@@ -63,7 +57,7 @@
 // console.log(sum);
 
 // 9. Напишите функцию power, которая в качестве аргумента n принимает число и возвращает квадрат этого числа.
-// const power = (n) => n * n; // стрелочная не сработала в валидаторе, в консоли все ок
+// const power = (n) => n * n; 
 // function power(n) {
 //     return n * n;
 // }
@@ -94,21 +88,25 @@
 // function range(n, m) {
 //     let array = [];
 //     if (n < m) {
-//         for (let i = 0; n < m; i++) {
-//             array[i] = n;
-//             n++;
+//         for (let i = n; i < m; i++) {
+//             array.push(i);
 //         }
 //     } else {
-//         for (let i = 0; n > m-2; i++) {
-//             array[i] = n;
-//             n--;
+//         for (let i = n; i >= m-1; i--) {
+//             array.push(i);
 //         }
 //     }
 //     return array;
 // }
+// function range(n, m) {
+//     let array = [];
+//         for (let i = Math.min(n,m); i < Math.max(n,m); i++) {
+//             array.push(i);
+//         }
+//     return array;
+// }
 // console.log(range(8, 15));
 // console.log(range(10, -2));
-// //в консоли вроде все работает как нужно, в валидаторе только когда n<m;
 
 //13.Напишите функцию, num_count, которая в качестве 
 //аргумента принимает целое число и возвращает количество цифр в этом числе.
@@ -122,8 +120,6 @@
 //14.Напишите функцию, get_hypotenuse, которая в качестве аргумента 
 //принимает два числа (длины катетов) и возвращает гипотенузу.
 
-// по условию не понятно что должна возвращать функция при а и (или) b <= 0, так как по сути эти значения не могут быть = или < 0
-// в валидаторе при а=1, b=0 решение не верно, не поняла какое верное решение должно быть
 // function get_hypotenuse(a, b) {
 //     let c = Math.sqrt(a * a + b * b);
 //     return c;
