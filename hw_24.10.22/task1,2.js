@@ -21,9 +21,6 @@ console.log(array); //[ 5, 3, 8, 1 ]
 
 
 
-
-
-
 console.log('-----------Task2.1---------');
 
 // Напишите функцию filterRangeInPlace(arr, a, b), 
