@@ -41,7 +41,7 @@ const filterRangeInPlace = function (arr, a, b) {
         (item, i) => {
             if (item < a || item > b) {
                 arr.splice(i, 1);
-                i -= 2;
+                i -= 1;
             }
         }
     );
