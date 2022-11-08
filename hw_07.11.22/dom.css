@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.button {
+  background-color: rgb(145, 206, 224);
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  margin: 50px;
+}
+
+/* -----------2----------- */
+
+.picture__item {
+  height: 250px;
+  aspect-ratio: 1;
+  margin: 50px;
+}
+.button-action {
+  background-color: rgb(145, 206, 224);
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  margin-left: 50px;
+}
+.get-style {
+  border-radius: 50px;
+  overflow: hidden;
+}
