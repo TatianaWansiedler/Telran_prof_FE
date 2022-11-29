@@ -4,6 +4,9 @@
 // Результат должен выглядеть приблизительно как на макете 
 //https://www.figma.com/file/wRonUTYoOVL3ii4meCtdzR/Untitled?node-id=1%3A2&t=5i8ANTCkEpFzMpoi-0
 
+// результат дз на GitHub Pages https://tatianawansiedler.github.io/Telran_prof_FE/hw_26.11.22/
+
+
 //1. обработчик события формы
 
 const products = [];
@@ -62,7 +65,6 @@ function showTotalAmount() {
 //4. функция rerender 
 
 const container = document.querySelector('.container')
-
 
 function rerender() {
     container.innerText = ''
